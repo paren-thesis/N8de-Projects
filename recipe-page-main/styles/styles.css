@@ -1,0 +1,140 @@
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 30px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.heading {
+    margin-top: 10px;
+    font-family: 'YoungSerif';
+    text-align: left;
+    font-size: 30px;
+}
+
+.description {
+    font-family: 'Outfit';
+    text-align: left;
+    font-size: 14px;
+    color: hsl(30, 10%, 34%);
+}
+
+.prep-time {
+    background: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.prep{
+    font-family: 'Outfit';
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+
+ul, ol {
+    font-family: 'Outfit';
+    padding-left: 20px;
+    font-size: 15px;
+    margin: 20px 0;
+    color: hsl(30, 10%, 34%);
+}
+
+.ingre{
+    font-family: 'YoungSerif';
+    font-size: 25px;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingre-list li{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.ingredients li, .instructions li {
+    margin: 8px 0;
+}
+
+hr {
+    margin-top: 15px;
+    border: 1px solid rgb(240, 237, 237);
+}
+
+.nutrition {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition th, .nutrition td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid hsl(332, 51%, 32%);
+}
+
+.nutri tr {
+    display: flex;
+}
+
+.nutrition-info {
+    margin-top: 20px;
+}
+
+.nutrition-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition-info table th, .nutrition-info table td {
+    font-family: 'Outfit';
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.nutrition-info th{
+    color: hsl(332, 51%, 32%);
+}
+
+.nutrition-info td{
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .prep-time {
+        padding: 8px;
+    }
+}
