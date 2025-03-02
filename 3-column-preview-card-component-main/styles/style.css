@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Big';
+  src: url('../assets/fonts/BigShouldersDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('../assets/fonts/LexendDeca-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 10px;
+}
+
+.card {
+  width: 350px;
+  padding: 50px;
+  height: 550px;
+  color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 70px;
+}
+
+.card h1 {
+  font-family: 'Big';
+  font-size: 40px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+.card p {
+  font-family: 'Lexend';
+  font-size: 18px;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 80px;
+}
+
+.card btn {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-family: 'Lexend';
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-self: flex-start;
+}
+
+.card btn:hover {
+  background-color: rgba(255, 0, 0, 0);
+  color: hsl(0, 0%, 95%);
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.sedans btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury btn {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 100rem;
+    border-radius: 10px;
+  }
+
+  .card {
+    width: 90%;
+    height: 30rem;
+    padding: 30px;
+  }
+
+  .card p {
+    margin-bottom: 10px;
+  }
+
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .card btn:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+  }
+}
