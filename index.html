@@ -9,12 +9,47 @@
   <title>Frontend Mentor | 3-column preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="styles/style.css">
+  <style>
+body {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: rgb(30, 41, 41);
+}
+.work-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 40%px;
+}
+
+.work-links a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter-VariableFont_slnt';
+    background-color: hsl(224, 68%, 18%);
+    padding: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.work-links a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+  </style>
 </head>
 <body>
-	<button><a href="recipe-page-main/index.html" alt="recipe-page-main">recipe-page-main</a></button><br>
-	<button>results-summary-component-main</button><br>
-	<button>social-links-profile</button><br>
-	<button>3-column-preview-card-components-main</button><br>
+    <div class="work-links">
+      <a href="recipe-page-main/index.html" alt="recipe-page-main">recipe-page-main</a>
+      <a href="results-summary-component-main/index.html" alt="recipe-page-main">results-summary-component-main</a>
+      <a href="social-links-profile-main/index.html" alt="social-links-profile-main">social-links-profile-main</a>
+      <a href="freeCodeCampProjects/" alt="freeCodeCampProjects">freeCodeCampProjects</a>
+      <a href="3-column-preview-card-component-main/index.html" alt="3-column-preview-card-component-main">3-column-preview-card-component-main</a>
+      <a href="MyLandingPage/index.html" alt="Landing Page">MyLandingPage</a>
+  </div>
 </body>
 </html>
