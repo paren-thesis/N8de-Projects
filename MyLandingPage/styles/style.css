@@ -155,6 +155,8 @@ ul {
 .btn-secondary-outline:hover {
     color: #173A56;
     text-decoration: none;
+    border-color: orange;
+    box-shadow: #e68a00;
 }
 
 .btn-lg {
@@ -263,26 +265,25 @@ ul {
 .features {
     padding: 5rem 0;
     position: relative;
-}
-
-.bg-holder {
-    position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    background: url('img/category/shape.png') no-repeat center/cover;
-    opacity: 0.5;
+    /* overflow: hidden; */
+    background-image: url("../img/category/shape.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 9;
+    background-position: center;
     z-index: -1;
+    margin-bottom: 7rem;
+    line-height: 24px;
 }
 
 .features h1 {
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
     color: (47, 40, 30);
     margin-bottom: 2rem;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 70px;
 }
 
 .feature-grid {
@@ -306,7 +307,10 @@ ul {
 
 /* Validation Section */
 .validation {
+    position: static;
     padding: 5rem 0;
+    line-height: 24px;
+    -moz-box-flex: 0;
 }
 
 .validation-content {
@@ -436,10 +440,19 @@ ul {
     color: #FF9900;
 }
 
+.line {
+    border: 0;
+    height: 0.1rem;
+    width: 90%;
+    background: #e0e0e0;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Footer */
 .footer {
     padding: 7rem 0 2rem;
-    border-top: 2px solid #544837;
 }
 
 .footer-content {
@@ -462,16 +475,29 @@ ul {
 }
 
 .footer-signup input {
-    padding: 0.688rem 1.563rem;
-    border: 1px solid #E0E0E0;
+    display: inline-block;
+    font-weight: 650;
+    line-height: 1.5;
+    color: #173a56;
+    border-color: rgb(164, 177, 191);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid rgb(139, 177, 218);
+    padding: 12px 26px;
+    font-size: 16px;
     border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 /* Copyright */
 .copyright {
     padding: 1rem 0;
     text-align: center;
-    border-top: 1px solid #544837;
 }
 
 .copyright-content {
@@ -515,6 +541,13 @@ ul {
         display: none;
         flex-direction: column;
         width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
     }
 
     img {
