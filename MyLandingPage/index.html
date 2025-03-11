@@ -20,10 +20,10 @@
         <a class="navbar-brand" href="index.html">
           <img src="img/logo.svg" height="31" alt="logo" />
         </a>
-        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleNav()">
+          <span class="navbar-toggler-icon">&#9776;</span> <!-- Hamburger icon -->
         </button>
-        <div class="navbar-collapse">
+        <div class="navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#feature">Product</a></li>
             <li class="nav-item"><a class="nav-link" href="#validation">Customers</a></li>
@@ -242,10 +242,10 @@
           <div class="footer-signup">
             <p>Knowing you're always on the best energy deal.</p>
             <form>
-              <input class="sign" type="email" placeholder="Enter your phone Number" aria-label="phone" />
-              <button class="btn btn-warning" type="submit">Sign up Now</button>
+                <input class="sign" type="email" placeholder="Enter your phone Number" aria-label="phone" />
+                <button class="btn btn-warning" type="submit">Sign up Now</button>
             </form>
-          </div>
+        </div>
         </div>
       </div>
     </section>
